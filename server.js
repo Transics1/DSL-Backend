@@ -39,11 +39,12 @@ app.use("/api/admin", adminRoutes);
 
 mongoose
   .connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+
   })
   .then(() => {
     console.log("MongoDB connected");
-    app.listen(5000, () => console.log("Server running on port 5000"));
+    app.listen(process.env.PORT || 5000, () => 
+      console.log(`Server running on port ${process.env.PORT || 5000}`)
+    );
   })
   .catch((err) => console.log(err));
