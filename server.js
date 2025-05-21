@@ -15,8 +15,8 @@ if (!fs.existsSync(uploadDir)) {
 
 const app = express();
 const allowedOrigins = [
-  'https://dsl-frontend-git-main-satviks-projects-a1d39169.vercel.app/',
-  // 'https://dsl-frontend-satviks-projects-a1d39169.vercel.app',
+  // 'https://dsl-frontend-git-main-satviks-projects-a1d39169.vercel.app/',
+  'https://dsl-frontend-satviks-projects-a1d39169.vercel.app'
   // 'http://localhost:3000'
 ];
 
